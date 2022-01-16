@@ -23,7 +23,7 @@ body{
 } 
 .landingPage p{
  	font-family: Bahnschrift;
- 	font-size: 2rem;
+ 	font-size: 20px;
  	font-weight: 400;
  	line-height: 32px;
 }
@@ -50,6 +50,7 @@ body{
 	font-size: 2.2rem;
 	font-weight: 400;
  	line-height: 40px;
+ 	margin-bottom: 15px;
 }
 .landingPage h3{
 	font-family: Anton;
@@ -75,11 +76,17 @@ div.menuElements div.menu button.order{
 	display: none;
 	justify-content: center;
 	align-items: center;
-	width: 152px;
-	height: 41px;
+	padding: 8px 43px;
 	margin: 15px 0;
 	background-color: var(--jasnyZielony);
 	border-radius: 30px;
+}
+header div.baner div.buttons button.playVideo{
+	padding: 8px 25px;
+}
+header div.baner div.buttons button.order:hover, header div.baner div.buttons button.playVideo:hover{
+	transition: 0.3s;
+	background-color: var(--limonkowy);
 }
 div.menuElements{
 	position: relative;
@@ -202,17 +209,17 @@ header div.baner img{
 }
 /*Przyciski zamów teraz i odtwórz wideo*/
 header div.baner div.buttons{
-	width: 195px;
-	//background-color: yellow;
+	width: auto;
 }
 header div.baner div.buttons button.order,
 header div.baner div.buttons button.playVideo{
+	transition: background-color 0.3s;
 	position: relative;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	width: 100%;
-	height: 41px;
+	padding: 8px 43px;
+	min-width: 241px;
 	margin: 15px 0;
 	background-color: var(--jasnyZielony);
 	border-radius: 30px;
@@ -321,6 +328,9 @@ main div.howItWorksSection div.worksBox h3{
 	margin-top: 60px;
 	margin-bottom: 20px;
 }
+main div.howItWorksSection div.worksBox p{
+	font-size: 16px;
+}
 main div.howItWorksSection p:first-of-type{
 	margin-top: 5px;
 }
@@ -373,6 +383,9 @@ main div.functionsSection div.features div.featureFrame{
 	padding-right: 10px;
 	text-align: left;
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+main div.functionsSection div.features div.featureFrame p{
+	font-size: 18px;
 }
 main div.functionsSection div.features div.featureFrame:nth-of-type(4){
 	margin-bottom: 0;
@@ -448,7 +461,6 @@ main div.reviewsSection div.reviewCardWithArrows div.reviewCard{
 	text-align: left;
 }
 main div.reviewsSection div.reviewCardWithArrows div.reviewCard p{
-	font-size: 1.8rem;
 	padding: 20px;
 }
 main div.reviewsSection div.reviewCardWithArrows div.reviewCard div.avatarInfo{
@@ -690,7 +702,6 @@ footer div.contactSection div.aboutBox,footer div.contactSection div.paymentBox,
 	}
 	div.menuElements div.menu button.order{
 		display: block;
-		width: 195px;
 		transition: .3s ease-out;
 	}
 	div.menuElements div.menu button.order:hover{
@@ -739,8 +750,19 @@ main div.reviewsSection div.reviewCardWithArrows div.reviewCard{
 }
 @media only screen and (min-width: 1440px){
 	html{
-		font-size: 13px;
+		font-size: 15px;
 	}
+	.landingPage h1{
+		font-size: 3.6rem;
+	}
+	.landingPage h2{
+		font-size: 2.7rem;
+	}
+	header div.baner div.tytul{
+	//background-color: yellow;
+	width: 838px;
+}
+	.landingPage 
 	main div.reviewsSection div.reviewCardWithArrows div.reviewCard{
 		width: 360px;
 }
