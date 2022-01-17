@@ -183,7 +183,7 @@ header div.baner{
 	height: auto;
 	padding: 63px 15px;
 	//border: 3px solid red;
-	background-image: url("grafiki/tlo.png");
+	background-image: url("grafiki/tlo.webp");
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: 30%;
@@ -483,7 +483,7 @@ main div.reviewsSection div.reviewCardWithArrows div.leftArrow{
 	cursor: pointer;
 }
 main div.reviewsSection div.reviewCardWithArrows div.leftArrow.disable{
-	background: url('grafiki/arrow-left-disable.png') no-repeat center center / contain;
+	background: url('grafiki/arrow-left-disable.webp') no-repeat center center / contain;
 	content: '';
 	cursor: default;
 }
@@ -495,7 +495,7 @@ main div.reviewsSection div.reviewCardWithArrows div.rightArrow{
 	cursor: pointer;
 }
 main div.reviewsSection div.reviewCardWithArrows div.rightArrow.disable{
-	background: url('grafiki/arrow-right-disable.png') no-repeat center center / contain;
+	background: url('grafiki/arrow-right-disable.webp') no-repeat center center / contain;
 	content: '';
 	cursor: default;
 }
